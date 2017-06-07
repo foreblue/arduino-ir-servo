@@ -17,6 +17,7 @@ void setup() {
     Serial.begin(9600);
     irrecv.enableIRIn();
     servo.attach(servoPin);
+    servo.write(angle);
 }
  
 void loop() {
